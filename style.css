@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background: antiquewhite;
+
+}
+*{
+    margin:0px 0px;
+    padding: 0px;
+    width: 100%;
+}
+nav{
+    font-family: 'Ubuntu',sans-serif;
+
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 45px;
+    background-color: black;
+    color: white;
+}
+nav ul li{
+    padding: 0px 4px;
+    width: 9%;
+    
+}
+.brand img{
+    width:44px;
+    padding: 4 0px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.container{
+    min-height:60vh;
+    background-color: black;
+    color: black;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 23px auto;
+    width:70%;
+    border-radius: 30px;
+    background-image: url('pic1.jpg');
+    
+}
+
+.bottom{
+ position: sticky;
+ height: 70px;
+ background-color: black;
+ bottom:0;
+ color: white;
+ display: flex;
+ justify-self:center;
+ align-items: center;
+ flex-direction:column;  
+ text-align: center;
+ 
+
+ 
+}
+.icons {
+    display: flex;
+    justify-content: space-between;
+    width: max-content;
+    margin: auto;
+}
+
+.icons i {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.icons i:last-child {
+    margin-right: 0;
+}
+
+#myProgressBar{
+    width:65vw ;  
+    cursor: pointer;
+}
+.songItemcontainer{
+    margin-top: 45px;
+}
+.songItem{
+    height: 40px;
+    display: flex;
+    background-color:black;
+    color: white;
+    text-align: left;
+    width: 50%;
+    margin: 15px 0;;
+    justify-content: space-between;
+    align-items: center;
+    border-radius:34px ;
+}
+.songItem img{
+    width: 30px;
+    margin: 0 23px;
+    border-radius:34px ;
+    flex-direction: column;
+}
+.timestamp{
+    border-radius: 34px;
+    
+
+
+}
+.timestamp i{
+    cursor: pointer;
+    
+}
+.songInfo{
+    position: absolute;
+    margin-top: 5px;
+    left: 10vw;
+    width: 55px;
+    display: flex;
+    justify-content: space-between;
+    
+  
+}
+.songInfo span {
+    margin-top: 34px;
+    white-space: nowrap; /* Prevents the text from wrapping to the next line */
+}
+
+.songInfo img{
+    opacity: 1;
+    transition: opacity 1s ease-in;
+    
+}
+@media only screen and (max-width: 1100px) {
+    body {
+      background-color: red;
+    }
+  }

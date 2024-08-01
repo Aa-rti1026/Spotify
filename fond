@@ -1,0 +1,31 @@
+font-family: 'Varela Round' sans-serif;
+let songItems =  Array.from(document.getElementsByClassName('songItem'));
+songItems.forEach( (element)=>{
+    element.getElementsByTagName("img")[0].src = songs[i].coverPath;
+    element.getElementsByclassName("songName")[0].innerText = songs[i].songName;
+  
+    })
+    
+  const makeAllplays=()=>{
+
+    Array.from(document.getElementsByClassName('songItemplay')).forEach((element)=>{
+      element.classList.remove('fa-play-circle');
+      element.classList.add('fa-pause-circle');
+
+    })
+  }
+   Array.from(document.getElementsByClassName('songItemplay')).forEach((element)=>{
+    element.addEventListener('click',()=>{
+      makeAllplays();
+     songIndex = parseInt(e.target.id);
+      e.target.classList.remove('fa-play-circle');
+      e.target.classList.add('fa-pause-circle');
+     audioElement.src = 'songs/1(songindex).mp3';
+     audioElement.currentTime = 0;
+     audioElement.play();
+     masterPlay.classList.remove('fa-play-circle');
+        masterPlay.classList.add('fa-pause-circle');
+        
+
+    })
+   })
